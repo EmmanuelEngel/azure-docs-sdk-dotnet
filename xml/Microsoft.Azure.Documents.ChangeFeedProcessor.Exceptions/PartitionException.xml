@@ -6,13 +6,18 @@
   <TypeSignature Language="F#" Value="type PartitionException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Documents.ChangeFeedProcessor</AssemblyName>
-    <AssemblyVersion>2.0.4.0</AssemblyVersion>
-    <AssemblyVersion>2.0.6.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-dotnet">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             General exception occurred during partition processing.
@@ -29,8 +34,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.ChangeFeedProcessor</AssemblyName>
-        <AssemblyVersion>2.0.4.0</AssemblyVersion>
-        <AssemblyVersion>2.0.6.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
@@ -54,8 +59,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.ChangeFeedProcessor</AssemblyName>
-        <AssemblyVersion>2.0.4.0</AssemblyVersion>
-        <AssemblyVersion>2.0.6.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
@@ -79,8 +84,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.ChangeFeedProcessor</AssemblyName>
-        <AssemblyVersion>2.0.4.0</AssemblyVersion>
-        <AssemblyVersion>2.0.6.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
@@ -106,8 +111,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.ChangeFeedProcessor</AssemblyName>
-        <AssemblyVersion>2.0.4.0</AssemblyVersion>
-        <AssemblyVersion>2.0.6.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -134,8 +139,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.ChangeFeedProcessor</AssemblyName>
-        <AssemblyVersion>2.0.4.0</AssemblyVersion>
-        <AssemblyVersion>2.0.6.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

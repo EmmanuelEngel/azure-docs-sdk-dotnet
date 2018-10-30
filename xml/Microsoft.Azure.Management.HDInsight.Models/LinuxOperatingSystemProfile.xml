@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The ssh username, password, and ssh public key.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,10 +29,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the LinuxOperatingSystemProfile
+            class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="username" Type="System.String" />
@@ -49,10 +57,13 @@
         <Parameter Name="sshProfile" Type="Microsoft.Azure.Management.HDInsight.Models.SshProfile" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="password">To be added.</param>
-        <param name="sshProfile">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="username">The username.</param>
+        <param name="password">The password.</param>
+        <param name="sshProfile">The SSH profile.</param>
+        <summary>
+            Initializes a new instance of the LinuxOperatingSystemProfile
+            class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +77,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="password")</AttributeName>
         </Attribute>
       </Attributes>
@@ -76,7 +88,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the password.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,9 +105,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sshProfile")</AttributeName>
         </Attribute>
       </Attributes>
@@ -101,7 +116,9 @@
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.SshProfile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the SSH profile.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,9 +133,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="username")</AttributeName>
         </Attribute>
       </Attributes>
@@ -126,7 +144,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the username.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type EventGridSubscriber = class&#xA;    interface IEventGridEventDeserializer&#xA;    interface ICustomEventTypeMapper" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,7 +32,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -52,7 +52,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -82,7 +82,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventGrid.Models.EventGridEvent[]</ReturnType>
@@ -115,7 +115,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventGrid.Models.EventGridEvent[]</ReturnType>
@@ -147,7 +147,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventGrid.Models.EventGridEvent[]</ReturnType>
@@ -181,7 +181,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventGrid.Models.EventGridEvent[]</ReturnType>
@@ -216,7 +216,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -243,11 +243,11 @@
       <MemberSignature Language="F#" Value="abstract member TryGetCustomEventMapping : string *  -&gt; bool&#xA;override this.TryGetCustomEventMapping : string *  -&gt; bool" Usage="eventGridSubscriber.TryGetCustomEventMapping (eventType, eventDataType)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Azure.EventGrid.ICustomEventTypeMapper.TryGetCustomEventMapping(System.String,System.Type)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Azure.EventGrid.ICustomEventTypeMapper.TryGetCustomEventMapping(System.String,System.Type@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -274,11 +274,11 @@
       <MemberSignature Language="F#" Value="abstract member TryRemoveCustomEventMapping : string *  -&gt; bool&#xA;override this.TryRemoveCustomEventMapping : string *  -&gt; bool" Usage="eventGridSubscriber.TryRemoveCustomEventMapping (eventType, eventDataType)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Azure.EventGrid.ICustomEventTypeMapper.TryRemoveCustomEventMapping(System.String,System.Type)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Azure.EventGrid.ICustomEventTypeMapper.TryRemoveCustomEventMapping(System.String,System.Type@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventGrid</AssemblyName>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

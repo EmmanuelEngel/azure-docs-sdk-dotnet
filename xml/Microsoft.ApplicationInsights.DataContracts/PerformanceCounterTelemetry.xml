@@ -6,7 +6,9 @@
   <TypeSignature Language="F#" Value="type PerformanceCounterTelemetry = class&#xA;    interface ITelemetry&#xA;    interface ISupportProperties" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <AssemblyVersion>2.7.2.0</AssemblyVersion>
+    <AssemblyVersion>2.8.0.0</AssemblyVersion>
+    <AssemblyVersion>2.8.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +27,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The class that represents information about performance counters.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,11 +41,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ApplicationInsights.DataContracts.PerformanceCounterTelemetry" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +62,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="categoryName" Type="System.String" />
@@ -63,11 +73,13 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="categoryName">To be added.</param>
-        <param name="counterName">To be added.</param>
-        <param name="instanceName">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="categoryName">Category name.</param>
+        <param name="counterName">Performance counter name.</param>
+        <param name="instanceName">Instance name.</param>
+        <param name="value">Performance counter value.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ApplicationInsights.DataContracts.PerformanceCounterTelemetry" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,13 +92,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the category name.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,13 +119,17 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.DataContracts.TelemetryContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the context associated with the current telemetry item.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,13 +143,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the counter name.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,15 +170,45 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Channel.ITelemetry</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Deeply clones a <see cref="T:Microsoft.ApplicationInsights.DataContracts.PerformanceCounterTelemetry" /> object.
+            </summary>
+        <returns>A cloned instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extension">
+      <MemberSignature Language="C#" Value="public Microsoft.ApplicationInsights.Extensibility.IExtension Extension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.ApplicationInsights.Extensibility.IExtension Extension" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ApplicationInsights.DataContracts.PerformanceCounterTelemetry.Extension" />
+      <MemberSignature Language="VB.NET" Value="Public Property Extension As IExtension" />
+      <MemberSignature Language="F#" Value="member this.Extension : Microsoft.ApplicationInsights.Extensibility.IExtension with get, set" Usage="Microsoft.ApplicationInsights.DataContracts.PerformanceCounterTelemetry.Extension" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.ApplicationInsights.Channel.ITelemetry.Extension</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.ApplicationInsights.Extensibility.IExtension</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets gets the extension used to extend this telemetry instance using new strong typed object.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,13 +221,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the instance name.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,14 +247,18 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sanitizes the properties based on constraints.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,13 +274,17 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a dictionary of application-defined property names and values providing additional information about this exception.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,15 +301,47 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the value that defines absolute order of the telemetry item.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeData">
+      <MemberSignature Language="C#" Value="public void SerializeData (Microsoft.ApplicationInsights.Extensibility.ISerializationWriter serializationWriter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SerializeData(class Microsoft.ApplicationInsights.Extensibility.ISerializationWriter serializationWriter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.DataContracts.PerformanceCounterTelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SerializeData (serializationWriter As ISerializationWriter)" />
+      <MemberSignature Language="F#" Value="abstract member SerializeData : Microsoft.ApplicationInsights.Extensibility.ISerializationWriter -&gt; unit&#xA;override this.SerializeData : Microsoft.ApplicationInsights.Extensibility.ISerializationWriter -&gt; unit" Usage="performanceCounterTelemetry.SerializeData serializationWriter" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.ApplicationInsights.Channel.ITelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationWriter" Type="Microsoft.ApplicationInsights.Extensibility.ISerializationWriter" />
+      </Parameters>
+      <Docs>
+        <param name="serializationWriter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Timestamp">
@@ -258,13 +356,17 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets date and time when telemetry was recorded.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,13 +380,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the counter value.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

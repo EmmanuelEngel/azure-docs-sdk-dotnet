@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type Telemetry.Receiver = delegate of List&lt;Dictionary&lt;string, string&gt;&gt; -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-    <AssemblyVersion>1.1.4.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>2.2.1.0</AssemblyVersion>
+    <AssemblyVersion>2.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -18,8 +21,10 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="events"></param>
-    <summary />
+    <param name="events">Dictionary of key/values pair</param>
+    <summary>
+            Delegate telling the signature of your callbacks that will send telemetry information to your telemetry service
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The properties of cluster.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,10 +29,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the ClusterGetProperties class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,6 +48,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="clusterDefinition" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterDefinition" />
@@ -58,19 +65,27 @@
         <Parameter Name="connectivityEndpoints" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.HDInsight.Models.ConnectivityEndpoint&gt;" />
       </Parameters>
       <Docs>
-        <param name="clusterDefinition">To be added.</param>
-        <param name="clusterVersion">To be added.</param>
-        <param name="osType">To be added.</param>
-        <param name="tier">To be added.</param>
-        <param name="securityProfile">To be added.</param>
-        <param name="computeProfile">To be added.</param>
-        <param name="provisioningState">To be added.</param>
-        <param name="createdDate">To be added.</param>
-        <param name="clusterState">To be added.</param>
-        <param name="quotaInfo">To be added.</param>
-        <param name="errors">To be added.</param>
-        <param name="connectivityEndpoints">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="clusterDefinition">The cluster definition.</param>
+        <param name="clusterVersion">The version of the cluster.</param>
+        <param name="osType">The type of operating system. Possible values
+            include: 'Windows', 'Linux'</param>
+        <param name="tier">The cluster tier. Possible values include:
+            'Standard', 'Premium'</param>
+        <param name="securityProfile">The security profile.</param>
+        <param name="computeProfile">The compute profile.</param>
+        <param name="provisioningState">The provisioning state, which only
+            appears in the response. Possible values include: 'InProgress',
+            'Failed', 'Succeeded', 'Canceled', 'Deleting'</param>
+        <param name="createdDate">The date on which the cluster was
+            created.</param>
+        <param name="clusterState">The state of the cluster.</param>
+        <param name="quotaInfo">The quota information.</param>
+        <param name="errors">The list of errors.</param>
+        <param name="connectivityEndpoints">The list of connectivity
+            endpoints.</param>
+        <summary>
+            Initializes a new instance of the ClusterGetProperties class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +99,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="clusterDefinition")</AttributeName>
         </Attribute>
       </Attributes>
@@ -94,7 +110,9 @@
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.ClusterDefinition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the cluster definition.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,9 +127,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="clusterState")</AttributeName>
         </Attribute>
       </Attributes>
@@ -119,7 +138,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the state of the cluster.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,9 +155,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="clusterVersion")</AttributeName>
         </Attribute>
       </Attributes>
@@ -144,7 +166,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the version of the cluster.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,9 +183,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="computeProfile")</AttributeName>
         </Attribute>
       </Attributes>
@@ -169,7 +194,9 @@
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.ComputeProfile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the compute profile.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,9 +211,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="connectivityEndpoints")</AttributeName>
         </Attribute>
       </Attributes>
@@ -194,7 +222,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.HDInsight.Models.ConnectivityEndpoint&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the list of connectivity endpoints.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,9 +239,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="createdDate")</AttributeName>
         </Attribute>
       </Attributes>
@@ -219,7 +250,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the date on which the cluster was created.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,9 +267,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="errors")</AttributeName>
         </Attribute>
       </Attributes>
@@ -244,7 +278,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.HDInsight.Models.Errors&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the list of errors.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,9 +295,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="osType")</AttributeName>
         </Attribute>
       </Attributes>
@@ -269,7 +306,10 @@
         <ReturnType>System.Nullable&lt;Microsoft.Azure.Management.HDInsight.Models.OSType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the type of operating system. Possible values include:
+            'Windows', 'Linux'
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,9 +324,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="provisioningState")</AttributeName>
         </Attribute>
       </Attributes>
@@ -294,7 +335,11 @@
         <ReturnType>System.Nullable&lt;Microsoft.Azure.Management.HDInsight.Models.HDInsightClusterProvisioningState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the provisioning state, which only appears in the
+            response. Possible values include: 'InProgress', 'Failed',
+            'Succeeded', 'Canceled', 'Deleting'
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -309,9 +354,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="quotaInfo")</AttributeName>
         </Attribute>
       </Attributes>
@@ -319,7 +365,9 @@
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.QuotaInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the quota information.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -334,9 +382,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="securityProfile")</AttributeName>
         </Attribute>
       </Attributes>
@@ -344,7 +393,9 @@
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.SecurityProfile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the security profile.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,9 +410,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tier")</AttributeName>
         </Attribute>
       </Attributes>
@@ -369,7 +421,10 @@
         <ReturnType>System.Nullable&lt;Microsoft.Azure.Management.HDInsight.Models.Tier&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the cluster tier. Possible values include: 'Standard',
+            'Premium'
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,14 +439,20 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Validate the object.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if validation fails
+            </exception>
       </Docs>
     </Member>
   </Members>

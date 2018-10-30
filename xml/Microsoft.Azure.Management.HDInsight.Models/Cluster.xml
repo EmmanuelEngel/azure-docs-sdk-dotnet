@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.HDInsight.Models.TrackedResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The HDInsight cluster.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,10 +29,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the Cluster class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,14 +60,57 @@
         <Parameter Name="properties" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterGetProperties" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="location">To be added.</param>
-        <param name="tags">To be added.</param>
-        <param name="etag">To be added.</param>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="id">Fully qualified resource Id for the
+            resource.</param>
+        <param name="name">The name of the resource</param>
+        <param name="type">The type of the resource.</param>
+        <param name="location">The Azure Region where the resource
+            lives</param>
+        <param name="tags">Resource tags.</param>
+        <param name="etag">The ETag for the resource</param>
+        <param name="properties">The properties of the cluster.</param>
+        <summary>
+            Initializes a new instance of the Cluster class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Cluster (string id = null, string name = null, string type = null, string location = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string etag = null, Microsoft.Azure.Management.HDInsight.Models.ClusterGetProperties properties = null, Microsoft.Azure.Management.HDInsight.Models.ClusterIdentity identity = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string location, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string etag, class Microsoft.Azure.Management.HDInsight.Models.ClusterGetProperties properties, class Microsoft.Azure.Management.HDInsight.Models.ClusterIdentity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.HDInsight.Models.Cluster.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,Microsoft.Azure.Management.HDInsight.Models.ClusterGetProperties,Microsoft.Azure.Management.HDInsight.Models.ClusterIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional location As String = null, Optional tags As IDictionary(Of String, String) = null, Optional etag As String = null, Optional properties As ClusterGetProperties = null, Optional identity As ClusterIdentity = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.HDInsight.Models.Cluster : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Microsoft.Azure.Management.HDInsight.Models.ClusterGetProperties * Microsoft.Azure.Management.HDInsight.Models.ClusterIdentity -&gt; Microsoft.Azure.Management.HDInsight.Models.Cluster" Usage="new Microsoft.Azure.Management.HDInsight.Models.Cluster (id, name, type, location, tags, etag, properties, identity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="etag" Type="System.String" />
+        <Parameter Name="properties" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterGetProperties" />
+        <Parameter Name="identity" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="id">Fully qualified resource Id for the
+            resource.</param>
+        <param name="name">The name of the resource</param>
+        <param name="type">The type of the resource.</param>
+        <param name="location">The Azure Region where the resource
+            lives</param>
+        <param name="tags">Resource tags.</param>
+        <param name="etag">The ETag for the resource</param>
+        <param name="properties">The properties of the cluster.</param>
+        <param name="identity">The identity of the cluster, if
+            configured.</param>
+        <summary>
+            Initializes a new instance of the Cluster class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +124,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="etag")</AttributeName>
         </Attribute>
       </Attributes>
@@ -85,7 +135,36 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the ETag for the resource
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.HDInsight.Models.ClusterIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.HDInsight.Models.ClusterIdentity Identity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.HDInsight.Models.Cluster.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As ClusterIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Microsoft.Azure.Management.HDInsight.Models.ClusterIdentity with get, set" Usage="Microsoft.Azure.Management.HDInsight.Models.Cluster.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="identity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.HDInsight.Models.ClusterIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the identity of the cluster, if configured.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,9 +179,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties")</AttributeName>
         </Attribute>
       </Attributes>
@@ -110,7 +190,9 @@
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.ClusterGetProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the properties of the cluster.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,14 +207,20 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Validate the object.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if validation fails
+            </exception>
       </Docs>
     </Member>
   </Members>

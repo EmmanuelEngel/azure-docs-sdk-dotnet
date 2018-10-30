@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The Linux operation systems profile.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,10 +29,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the OsProfile class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,13 +48,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="linuxOperatingSystemProfile" Type="Microsoft.Azure.Management.HDInsight.Models.LinuxOperatingSystemProfile" />
       </Parameters>
       <Docs>
-        <param name="linuxOperatingSystemProfile">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="linuxOperatingSystemProfile">The Linux OS
+            profile.</param>
+        <summary>
+            Initializes a new instance of the OsProfile class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +72,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="linuxOperatingSystemProfile")</AttributeName>
         </Attribute>
       </Attributes>
@@ -72,7 +83,9 @@
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.LinuxOperatingSystemProfile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the Linux OS profile.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

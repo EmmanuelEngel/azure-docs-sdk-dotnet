@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Extension methods for ClustersOperations.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.Cluster</ReturnType>
@@ -38,11 +42,21 @@
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterCreateParametersExtended" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The cluster create request.
+            </param>
+        <summary>
+            Creates a new HDInsight cluster with the specified parameters.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -56,6 +70,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -68,12 +83,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The cluster create request.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Creates a new HDInsight cluster with the specified parameters.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,6 +115,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -99,12 +127,17 @@
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterCreateParameters" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="parameters">Required. The cluster create request.</param>
+        <summary>
+            Begins creating a new HDInsight cluster with the specified parameters.
+            </summary>
+        <returns>
+            The CreateCluster operation response.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,6 +150,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -129,13 +163,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="parameters">Required. The cluster create request.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Begins creating a new HDInsight cluster with the specified parameters.
+            </summary>
+        <returns>
+            The CreateCluster operation response.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,6 +188,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -159,10 +199,18 @@
         <Parameter Name="clusterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <summary>
+            Deletes the specified HDInsight cluster.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,6 +223,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -186,11 +235,21 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Deletes the specified HDInsight cluster.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,6 +264,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -216,11 +276,21 @@
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.HDInsight.Models.ExecuteScriptActionParameters" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The parameters for executing script actions.
+            </param>
+        <summary>
+            Executes script actions on the specified HDInsight cluster.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,6 +304,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -246,12 +317,15 @@
         <Parameter Name="persistOnSuccess" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="scriptActions">To be added.</param>
-        <param name="persistOnSuccess">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="scriptActions">Required. The list of script actions that needs to be executed.</param>
+        <param name="persistOnSuccess">Required. Flag indicating if the script needs to be persisted.</param>
+        <summary>
+            Begins Executing script actions on specified HDInsight Running cluster.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,6 +338,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -276,12 +351,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The parameters for executing script actions.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Executes script actions on the specified HDInsight cluster.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,6 +382,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -308,14 +396,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="scriptActions">To be added.</param>
-        <param name="persistOnSuccess">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="scriptActions">Required. The list of script actions that needs to be executed.</param>
+        <param name="persistOnSuccess">Required. Flag indicating if the script needs to be persisted.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Begins Executing script actions on specified HDInsight Running cluster.
+            </summary>
+        <returns>
+            The cluster long running operation response.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,6 +422,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -340,11 +434,21 @@
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterResizeParameters" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The parameters for the resize operation.
+            </param>
+        <summary>
+            Resizes the specified HDInsight cluster to the specified size.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,6 +461,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -369,12 +474,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The parameters for the resize operation.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Resizes the specified HDInsight cluster to the specified size.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -389,6 +506,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -400,11 +518,14 @@
         <Parameter Name="targetInstanceCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="targetInstanceCount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="targetInstanceCount">Required. The target instance count.</param>
+        <summary>
+            Begins resizing the specified HDInsight cluster.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,6 +538,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -429,13 +551,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="targetInstanceCount">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="targetInstanceCount">Required. The target instance count.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Begins resizing the specified HDInsight cluster.
+            </summary>
+        <returns>
+            The cluster long running operation response.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,6 +576,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.Cluster</ReturnType>
@@ -460,12 +588,14 @@
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterCreateParameters" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="operations">The operations group for this extension method.</param>
+        <param name="resourceGroupName">The name of the resource group.</param>
+        <param name="clusterName">The name of the cluster.</param>
+        <param name="parameters">The cluster create request.</param>
+        <summary>
+            Creates a new HDInsight cluster with the specified parameters.
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -479,6 +609,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.Cluster</ReturnType>
@@ -490,11 +621,21 @@
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterCreateParametersExtended" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The cluster create request.
+            </param>
+        <summary>
+            Creates a new HDInsight cluster with the specified parameters.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -508,6 +649,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -520,13 +662,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">The name of the resource group.</param>
+        <param name="clusterName">The name of the cluster.</param>
+        <param name="parameters">The cluster create request.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Creates a new HDInsight cluster with the specified parameters.
+            </summary>
+        <returns>
+            The GetCluster operation response.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -539,6 +686,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -551,12 +699,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The cluster create request.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Creates a new HDInsight cluster with the specified parameters.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -571,6 +731,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -581,10 +742,18 @@
         <Parameter Name="clusterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <summary>
+            Deletes the specified HDInsight cluster.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,6 +766,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -608,11 +778,21 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Deletes the specified HDInsight cluster.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -627,6 +807,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -638,11 +819,21 @@
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.HDInsight.Models.ExecuteScriptActionParameters" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The parameters for executing script actions.
+            </param>
+        <summary>
+            Executes script actions on the specified HDInsight cluster.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -656,6 +847,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -668,12 +860,15 @@
         <Parameter Name="persistOnSuccess" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="scriptActions">To be added.</param>
-        <param name="persistOnSuccess">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="scriptActions">Required. The list of script actions that needs to be executed.</param>
+        <param name="persistOnSuccess">Required. Flag indicating if the script needs to be persisted.</param>
+        <summary>
+            Executes script actions on specified HDInsight Running cluster.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -686,6 +881,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -698,12 +894,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The parameters for executing script actions.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Executes script actions on the specified HDInsight cluster.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -717,6 +925,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -730,14 +939,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="scriptActions">To be added.</param>
-        <param name="persistOnSuccess">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="scriptActions">Required. The list of script actions that needs to be executed.</param>
+        <param name="persistOnSuccess">Required. Flag indicating if the script needs to be persisted.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Executes script actions on specified HDInsight Running cluster.
+            </summary>
+        <returns>
+            The cluster long running operation response.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -751,6 +965,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.Cluster</ReturnType>
@@ -761,10 +976,18 @@
         <Parameter Name="clusterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <summary>
+            Gets the specified cluster.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -778,6 +1001,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -789,11 +1013,21 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Gets the specified cluster.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -808,6 +1042,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -816,8 +1051,12 @@
         <Parameter Name="operations" Type="Microsoft.Azure.Management.HDInsight.IClustersOperations" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <summary>
+            Lists all the HDInsight clusters under the subscription.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -831,6 +1070,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;&gt;</ReturnType>
@@ -840,9 +1080,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Lists all the HDInsight clusters under the subscription.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -857,6 +1103,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -866,9 +1113,15 @@
         <Parameter Name="resourceGroupName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <summary>
+            Lists the HDInsight clusters in a resource group.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -882,6 +1135,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;&gt;</ReturnType>
@@ -892,10 +1146,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Lists the HDInsight clusters in a resource group.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -910,6 +1172,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -919,9 +1182,15 @@
         <Parameter Name="nextPageLink" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="nextPageLink">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="nextPageLink">
+            The NextLink from the previous successful call to List operation.
+            </param>
+        <summary>
+            Lists the HDInsight clusters in a resource group.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -935,6 +1204,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;&gt;</ReturnType>
@@ -945,10 +1215,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="nextPageLink">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="nextPageLink">
+            The NextLink from the previous successful call to List operation.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Lists the HDInsight clusters in a resource group.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -963,6 +1241,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -972,9 +1251,15 @@
         <Parameter Name="nextPageLink" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="nextPageLink">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="nextPageLink">
+            The NextLink from the previous successful call to List operation.
+            </param>
+        <summary>
+            Lists all the HDInsight clusters under the subscription.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -988,6 +1273,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;&gt;</ReturnType>
@@ -998,10 +1284,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="nextPageLink">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="nextPageLink">
+            The NextLink from the previous successful call to List operation.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Lists all the HDInsight clusters under the subscription.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1016,6 +1310,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1027,11 +1322,21 @@
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterResizeParameters" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The parameters for the resize operation.
+            </param>
+        <summary>
+            Resizes the specified HDInsight cluster to the specified size.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1045,6 +1350,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1056,11 +1362,14 @@
         <Parameter Name="targetInstanceCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="targetInstanceCount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="targetInstanceCount">Required. The target instance count.</param>
+        <summary>
+            Resizes the specified HDInsight cluster.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1073,6 +1382,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1085,12 +1395,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The parameters for the resize operation.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Resizes the specified HDInsight cluster to the specified size.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1104,6 +1426,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1116,13 +1439,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="targetInstanceCount">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="operations">Reference to the
+            Microsoft.Azure.Management.HDInsight.IClusterOperations.</param>
+        <param name="resourceGroupName">Required. The name of the resource group.</param>
+        <param name="clusterName">Required. The name of the cluster.</param>
+        <param name="targetInstanceCount">Required. The target instance count.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Resizes the specified HDInsight cluster.
+            </summary>
+        <returns>
+            The cluster long running operation response.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1136,6 +1464,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.HDInsight.Models.Cluster</ReturnType>
@@ -1147,11 +1476,21 @@
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.HDInsight.Models.ClusterPatchParameters" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The cluster patch request.
+            </param>
+        <summary>
+            Patch HDInsight cluster with the specified parameters.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1165,6 +1504,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.HDInsight.Models.Cluster&gt;</ReturnType>
@@ -1177,12 +1517,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="clusterName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="clusterName">
+            The name of the cluster.
+            </param>
+        <param name="parameters">
+            The cluster patch request.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Patch HDInsight cluster with the specified parameters.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

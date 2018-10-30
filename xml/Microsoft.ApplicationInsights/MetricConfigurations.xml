@@ -6,14 +6,18 @@
   <TypeSignature Language="F#" Value="type MetricConfigurations = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <AssemblyVersion>2.7.2.0</AssemblyVersion>
+    <AssemblyVersion>2.8.0.0</AssemblyVersion>
+    <AssemblyVersion>2.8.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Static container for the most commonly used metric configurations.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,18 +30,25 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
+        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.8.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute FrameworkAlternate="">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2104", Justification="Singelton is intended.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification="Singleton is intended.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.MetricConfigurations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Groups extension methods that return pre-defined metric configurations and related constants.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
